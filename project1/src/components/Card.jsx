@@ -6,21 +6,21 @@ const Card = (props) => {
 
      <div className="card">
             <div className="top">
-              <img src="https://img.icons8.com/3d-fluency/1200/amazon.jpg" alt="" />
+              <img src={props.brandLogo} alt="" />
               <button>Save <Bookmark size={15}/> </button>
             </div>
             <div className="center">
-              <h3>{props.com} <span>5 days ago</span></h3>
-              <h2>{props.des}</h2>
+              <h3>{props.com} <span>{props.datePosted}</span></h3>
+              <h2>{props.post}</h2>
               <div className='tag'>
-                <h4>Part time</h4>
-                <h4>Senior level</h4>
+                <h4>{props.tag1}</h4>
+                <h4>{props.tag2}</h4>
               </div>
             </div>
             <div className="bottom">
               <div>
-                  <h3>$120/hr</h3>
-                  <p>Mumbai, India</p>
+                  <h3>{props.pay}</h3>
+                  <p>{props.location}</p>
                                
               </div>
               <button>Apply now</button>
