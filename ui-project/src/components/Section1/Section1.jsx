@@ -1,9 +1,12 @@
 import React from 'react'
+import Navbar from './Navbar'
+import Page1Content from './Page1Content'
 
 const Section1 = () => {
   return (
-    <div className='h-screen w-full bg-gray-900 text-white'>
-      Section 1
+    <div className='h-screen w-full bg-white text-white'>
+     <Navbar />
+     <Page1Content />
     </div>
   )
 }
